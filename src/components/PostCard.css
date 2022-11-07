@@ -1,0 +1,38 @@
+.product-img {
+  object-fit: cover;
+  height: 200px;
+  width: 400px;
+}
+
+.btnsCard {
+  display: flex;
+  margin: 1rem 0;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ionCard-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.ionCard {
+  border-radius: 2%;
+}
+
+@media only screen and (max-width: 900px) {
+  .ionCard-grid {
+    grid-template-columns: auto auto;
+  }
+
+  .product-img {
+    height: 200px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .ionCard-grid {
+    grid-template-columns: auto;
+  }
+}
